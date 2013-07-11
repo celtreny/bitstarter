@@ -8,8 +8,11 @@ app.get('/', function(request, response) {
 	if (err) {
 	    throw err;
 	}
-	content = buffer.toString('utf-8');x
+	content = buffer.toString('utf-8');
+	console.log(content);
+	});
 	response.send(content);
+});
 
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
